@@ -28,7 +28,7 @@ public class Alen_SetUp {
     }
 
     @Test(
-            priority = 1
+            priority = 3
     )
 
 
@@ -76,7 +76,7 @@ public class Alen_SetUp {
     }
 
     @Test(
-            priority = 2
+            priority = 4
     )
     public void testStoreManager78() throws InterruptedException {
         driver.get("https://qa1.vytrack.com/user/login");
@@ -121,7 +121,7 @@ public class Alen_SetUp {
     }
 
     @Test(
-            priority = 3
+            priority = 5
     )
     public void testSalesManager133() throws InterruptedException {
         driver.get("https://qa1.vytrack.com/user/login");
@@ -165,7 +165,7 @@ public class Alen_SetUp {
     }
 
     @Test(
-            priority = 4
+            priority = 6
     )
     public void testSalesManager136() throws InterruptedException {
         driver.get("https://qa1.vytrack.com/user/login");
@@ -209,7 +209,7 @@ public class Alen_SetUp {
     }
 
     @Test(
-            priority = 5
+            priority = 1
     )
     public void testUser44() throws InterruptedException {
         driver.get("https://qa1.vytrack.com/user/login");
@@ -255,7 +255,7 @@ public class Alen_SetUp {
     }
 
     @Test(
-            priority = 6
+            priority = 2
     )
     public void testUser49() throws InterruptedException {
         driver.get("https://qa1.vytrack.com/user/login");
