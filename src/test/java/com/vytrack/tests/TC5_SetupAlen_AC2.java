@@ -1,16 +1,16 @@
 package com.vytrack.tests;
 
 import com.vytrack.utilities.ConfigurationReader_Alen;
-import com.vytrack.utilities.Test_Base_Alen;
+import com.vytrack.utilities.TestBase_Alen;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC5_Setup_Alen_AC2 extends Test_Base_Alen {
+public class TC5_SetupAlen_AC2 extends TestBase_Alen {
 
     @Test
-    public void test() throws InterruptedException {
+    public void testAC2() throws InterruptedException {
         driver.get(ConfigurationReader_Alen.getProperty("env"));
 
         WebElement  inputUsername= driver.findElement(By.xpath("//input[@id='prependedInput']"));

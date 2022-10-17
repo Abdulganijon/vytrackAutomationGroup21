@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class TC8_Setup_Alen {
+public class TC8_SetupAlen_AC1_AC2 {
 
     public WebDriver driver;
 

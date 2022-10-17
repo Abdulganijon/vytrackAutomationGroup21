@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
 
-public abstract class Test_Base_Alen {
+public abstract class TestBase_Alen {
 
         public WebDriver driver;
 
