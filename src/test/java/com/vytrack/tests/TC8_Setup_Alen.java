@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class Alen_SetUp {
+public class TC8_Setup_Alen {
 
     public WebDriver driver;
 
@@ -33,6 +33,7 @@ public class Alen_SetUp {
 
 
     public void testStoreManager75() throws InterruptedException {
+
         driver.get("https://qa1.vytrack.com/user/login");
         logIn.crm_login(driver, "storemanager75", "UserUser123");
         logIn.verifyTitle(driver, "Dashboard");
@@ -54,7 +55,6 @@ public class Alen_SetUp {
         selectRepeat.click();
 
         WebElement checkNumber = driver.findElement(By.xpath("(//input[@value='1'])[2] "));
-
 
         String validateNumber = checkNumber.getAttribute("value");
         System.out.println("validateNumber = " + validateNumber);
