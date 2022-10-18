@@ -9,12 +9,14 @@ import org.testng.annotations.Test;
 
 public class OroincDocumentationPage extends TestBase {
     @Test
-    public void  oroincDocumentationPage(){
+    public void  oroincDocumentationPage() throws InterruptedException {
         vy_track_login.Login_function(driver,"storemanager78","UserUser123");
         WebElement getHelpBtn = driver.findElement(By.xpath("//i[@title='Get help']"));
+        Thread.sleep(2000);
         getHelpBtn.click();
         for (String eachWindow : driver.getWindowHandles()) {
             driver.switchTo().window(eachWindow);
+            System.out.println("driver.getTitle() = " + driver.getTitle());
         }
 //    AC #1: users access the Oronic Documentation page by clicking the question icon. The page URL: https://doc.oroinc.com/
         String actualUrl = driver.getCurrentUrl();
