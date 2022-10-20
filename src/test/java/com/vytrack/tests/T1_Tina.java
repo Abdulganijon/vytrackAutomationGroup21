@@ -1,4 +1,4 @@
-package src.test.java.com.vytrack.tests;
+package com.vytrack.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
