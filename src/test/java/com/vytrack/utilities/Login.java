@@ -7,12 +7,12 @@ import org.openqa.selenium.WebElement;
 
 public class Log {
 
-    public static void crm_login(WebDriver driver, String username, String password) {
+    public static void vyTruck_login(WebDriver driver, String username) {
         WebElement inputUsername = driver.findElement(By.xpath("//input[@id='prependedInput']"));
         inputUsername.sendKeys(username);
 
         WebElement inputPassword = driver.findElement(By.xpath("//input[@id='prependedInput2']"));
-        inputPassword.sendKeys(password);
+        inputPassword.sendKeys("UserUser123");
 
         WebElement loginButton = driver.findElement(By.xpath("//button[@type='submit']"));
         loginButton.click();

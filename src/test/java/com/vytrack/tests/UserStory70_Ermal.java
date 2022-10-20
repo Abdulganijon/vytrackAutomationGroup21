@@ -1,6 +1,7 @@
 package com.vytrack.tests;
 
-import com.vytrack.utilities.Log;
+import com.vytrack.utilities.Login;
+
 import com.vytrack.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,6 +9,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class UserStory70_Ermal {
@@ -28,7 +32,7 @@ public class UserStory70_Ermal {
     @Test (priority = 1)
     public void StoreManager_access_vehicle_page_TC1() throws InterruptedException {
 
-        Log.crm_login(driver,"storemanager75","UserUser123");
+        Login.vyTruck_login(driver,"storemanager75");
       Thread.sleep(2000);
        WebElement fleet= driver.findElement(By.xpath("//div[@id='main-menu']/ul/li[2]"));
        fleet.click();
@@ -50,7 +54,7 @@ public class UserStory70_Ermal {
     @Test (priority = 2)
     public void SalesManager_access_vehicle_page_TC2() throws InterruptedException {
 
-        Log.crm_login(driver, "salesmanager113", "UserUser123");
+        Login.vyTruck_login(driver, "salesmanager113");
         Thread.sleep(2000);
         WebElement fleet2 = driver.findElement(By.xpath("//div[@id='main-menu']/ul/li[2]"));
         fleet2.click();
@@ -71,7 +75,7 @@ public class UserStory70_Ermal {
     @Test (priority = 3)
     public void Drivers_access_vehicle_page_TC3() throws InterruptedException {
 
-        Log.crm_login(driver, "user45", "UserUser123");
+        Login.vyTruck_login(driver, "user45");
         Thread.sleep(2000);
         WebElement fleet3 = driver.findElement(By.xpath("//div[@id='main-menu']/ul/li[1]"));
         fleet3.click();
@@ -86,6 +90,11 @@ public class UserStory70_Ermal {
 
 
         Assert.assertEquals(message.getText(),"You do not have permission to perform this action.");
+
+
+
+
+
 
 
 

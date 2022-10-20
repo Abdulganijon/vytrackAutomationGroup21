@@ -5,14 +5,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class logIn {
+public class Login {
 
-    public static void crm_login(WebDriver driver, String username, String password) {
+    public static void vyTruck_login(WebDriver driver, String username) {
         WebElement inputUsername = driver.findElement(By.xpath("//input[@id='prependedInput']"));
         inputUsername.sendKeys(username);
 
         WebElement inputPassword = driver.findElement(By.xpath("//input[@id='prependedInput2']"));
-        inputPassword.sendKeys(password);
+        inputPassword.sendKeys("UserUser123");
 
         WebElement loginButton = driver.findElement(By.xpath("//button[@type='submit']"));
         loginButton.click();
@@ -21,4 +21,6 @@ public class logIn {
     public static void verifyTitle(WebDriver driver, String expectedTitle) {
         Assert.assertEquals(driver.getTitle(), expectedTitle);
     }
+
+
 }
