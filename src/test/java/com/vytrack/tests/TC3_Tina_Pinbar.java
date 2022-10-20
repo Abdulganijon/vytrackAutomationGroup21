@@ -1,5 +1,6 @@
-package src.test.java.com.vytrack.tests;
+package com.vytrack.tests;
 
+import com.vytrack.utilities.vy_track_login;
 import org.openqa.selenium.By;
 import org.openqa.selenium.DeviceRotation;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +26,7 @@ public class TC3_Tina_Pinbar {
     @Test
     public void TestDriver44() throws InterruptedException {
         driver.get("https://qa1.vytrack.com/user/login");
-        com.vytrack.utilities.logIn.crm_login(driver, "storemanager75", "UserUser123");
+        vy_track_login.Login_function(driver, "storemanager75", "UserUser123");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
         WebElement learnHow = driver.findElement(By.xpath("//a[.='Learn how to use this space']"));
@@ -61,7 +62,7 @@ public class TC3_Tina_Pinbar {
 
 
         driver.get("https://qa1.vytrack.com/user/login");
-        com.vytrack.utilities.logIn.crm_login(driver, "storemanager75", "UserUser123");
+        vy_track_login.Login_function(driver, "storemanager75", "UserUser123");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
         WebElement howToUsePinbar = driver.findElement(By.xpath("//div[@class='clearfix']/h3"));

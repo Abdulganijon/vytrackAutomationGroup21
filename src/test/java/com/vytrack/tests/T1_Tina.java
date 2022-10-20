@@ -1,5 +1,6 @@
 package com.vytrack.tests;
 
+import com.vytrack.utilities.vy_track_login;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
@@ -22,7 +23,7 @@ public class T1_Tina {
     @Test
     public void TestDriver44() throws InterruptedException {
         driver.get("https://qa1.vytrack.com/user/login");
-        com.vytrack.utilities.logIn.crm_login(driver, "storemanager75", "UserUser123");
+        vy_track_login.Login_function(driver, "storemanager75", "UserUser123");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
         List<WebElement> allModules = new ArrayList<>();
