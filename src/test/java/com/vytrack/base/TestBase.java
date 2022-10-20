@@ -1,6 +1,5 @@
 package com.vytrack.base;
 
-import com.vytrack.utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
