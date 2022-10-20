@@ -212,7 +212,7 @@ public class TC8_SetupAlen_AC1_AC2 {
     )
     public void testUser44() throws InterruptedException {
         driver.get("https://qa1.vytrack.com/user/login");
-        logIn.crm_login(driver, "user44", "UserUser123");
+        .login( "user44", "UserUser123");
         logIn.verifyTitle(driver, "Dashboard");
         Thread.sleep(3000);
 
