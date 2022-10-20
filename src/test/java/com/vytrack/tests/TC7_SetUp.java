@@ -1,4 +1,4 @@
-package com.vytrack.tests;
+package src.test.java.com.vytrack.tests;
 
 import com.vytrack.utilities.logIn;
 import com.vytrack.utilities.logIn;
