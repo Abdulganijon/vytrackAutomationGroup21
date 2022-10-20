@@ -1,7 +1,7 @@
 package com.vytrack.tests;
 
-import com.vytrack.utilities.logIn;
-import com.vytrack.utilities.WebDriverFactory;
+import com.vytrack.utilities.WebDriverFactoryErmal;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +18,7 @@ public class UserStory70_Ermal {
     public void SetUp(){
 
 
-        driver = WebDriverFactory.getDriver("chrome");
+        driver = WebDriverFactoryErmal.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://qa1.vytrack.com/user/login");
@@ -28,7 +28,7 @@ public class UserStory70_Ermal {
     @Test (priority = 1)
     public void StoreManager_access_vehicle_page_TC1() throws InterruptedException {
 
-        logIn.vyTruck_login(driver,"storemanager75");
+        src.test.java.com.vytrack.utilities.logIn.vyTruck_login(driver,"storemanager75");
       Thread.sleep(2000);
        WebElement fleet= driver.findElement(By.xpath("//div[@id='main-menu']/ul/li[2]"));
        fleet.click();
@@ -50,7 +50,7 @@ public class UserStory70_Ermal {
     @Test (priority = 2)
     public void SalesManager_access_vehicle_page_TC2() throws InterruptedException {
 
-        logIn.vyTruck_login(driver, "salesmanager113");
+        src.test.java.com.vytrack.utilities.logIn.vyTruck_login(driver, "salesmanager113");
         Thread.sleep(2000);
         WebElement fleet2 = driver.findElement(By.xpath("//div[@id='main-menu']/ul/li[2]"));
         fleet2.click();
@@ -71,7 +71,7 @@ public class UserStory70_Ermal {
     @Test (priority = 3)
     public void Drivers_access_vehicle_page_TC3() throws InterruptedException {
 
-        logIn.vyTruck_login(driver, "user45");
+        src.test.java.com.vytrack.utilities.logIn.vyTruck_login(driver, "user45");
         Thread.sleep(2000);
         WebElement fleet3 = driver.findElement(By.xpath("//div[@id='main-menu']/ul/li[1]"));
         fleet3.click();
