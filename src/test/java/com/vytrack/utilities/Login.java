@@ -1,4 +1,4 @@
-package com.vytrack.utilities;
+package src.test.java.com.vytrack.utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;

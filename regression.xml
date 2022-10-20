@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="regression suite">
+    <test name="First Case">
+        <classes>
+            <class name="com.vytrack.tests.erkan.Test10byErkan"></class>
+        </classes>
+    </test>
+    <test name="Second Case">
+        <classes>
+            <class name="com.vytrack.tests.erkan.Test78byErkan"></class>
+
+        </classes>
+    </test>
+
+</suite>
