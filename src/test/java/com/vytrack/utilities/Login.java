@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Log {
+public class logIn {
 
     public static void vyTruck_login(WebDriver driver, String username) {
         WebElement inputUsername = driver.findElement(By.xpath("//input[@id='prependedInput']"));
